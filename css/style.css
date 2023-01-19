@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header, footer {
+    background-color: #ffffff;
+    padding: 2em;
+    text-align: center;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+   /* justify-content: center;*/
+    align-items: center;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+.grid-content {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#btn{
+    display: flex;
+    flex-direction:row;
+    margin-top: 1em;
+    
+}
+.allbtn{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.triplebtn{
+    display: flex;
+    flex-direction:row;
+   
+}
+.Exitbtn{
+    margin-left: 10em;
+}
+button{
+    width: 5em;
+    height: 2em;
+}
+.btn-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barscore{
+    display: flex;
+    flex-direction:row;
+    width: 825px; 
+    height: 40px;
+    margin: 1em;
+}
+.bar{
+    width: 100%;
+    border-radius: 5px;
+    margin-right:1em;
+    align-items: center;
+}
+.score{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    
+}
+.bar-stat{
+    height: 40px;
+    border: solid 1px #000000;
+    position: relative;
+}
+
+
+#sang{
+    height: 100%;
+    border: solid 0.2px #000000;
+    background-color: rgb(45, 185, 27);
+    width: 100% ;
+    
+}
+
+#espace-text{
+    position: absolute;
+    left: 50%;
+    margin-top: 0.5em;
+
+}
+/*
+#exit{
+    position: absolute;
+}*/
+#Exitdungeon{
+    width: 10em ;
+    height: 4em;
+    margin-top:2em ;
+}
+#goUp,#goLeft,#goDown,#goRight{
+    width: 4em ;
+    height: 4em;
+}
+
+#exit{
+    display: none;
+    border: solid 0.2px #000000;
+    background-color: #ffffff;
+    height:13em ;
+    width: 25em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right:40%;
+    bottom: 12rem;
+}
+#exit button{
+    margin-top: 1em;
+    width: 10em;
+    
+}
+#exit p{
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+#exit h2{
+    font-weight: bold;
+    font-size: 2em;
+}
+canvas{
+    position: relative;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module"src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <h1 id="titre">Dungeon Explorer</h1>
+        </header>
+        <main>
+            <div class="barscore">
+                <div class="bar"> 
+                    <div class="bar-stat">
+                        <div id="sang">
+                            <span id="espace-text"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="score">
+                    <p id="ElementScore"></p>
+                </div>
+                
+            </div>
+            <div class="grid">
+                <canvas id="grille" width="825" height="495"></canvas>
+                <div id="exit">
+                    <h2 id="exitgameOver">game over</h2>
+                    <p id="exitScore"></p> 
+                    <button id="exitRejouer">Rejouer</button>'
+                </div>
+            </div>
+            <div id="btn">
+                <div class="allbtn">
+                    <div class="btn-up">
+                    <button id="goUp" class="on">Up</button>
+                    </div>
+                    <div class="triplebtn">
+                        <button id="goLeft" class="on">Left</button>
+                        <button id="goDown"class="on" >down</button>
+                        <button id="goRight" class="on">Right</button>
+                    </div>
+                </div>
+                <div class="Exitbtn">
+                <button id="Exitdungeon" class="on">Exit dungeon (E)</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
